@@ -16,7 +16,7 @@ const AddMovie = () => {
 
   const addMovie = e => {
     e.preventDefault();
-    setMovies(prevMovies => [...prevMovies, {name: name, price: price}]);
+    setMovies(prevMovies => [...prevMovies, {name: name, price: price, id: Math.random() *10000}]);
   }
 
   return (
